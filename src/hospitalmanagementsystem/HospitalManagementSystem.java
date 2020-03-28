@@ -25,6 +25,8 @@ public class HospitalManagementSystem extends Application {
         btn.setText("Say 'Hello World'");
         
         //TestComment
+        
+        //Some new comment
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
