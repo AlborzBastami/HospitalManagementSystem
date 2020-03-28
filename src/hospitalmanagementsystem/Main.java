@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Main {
 
@@ -82,6 +84,12 @@ public class Main {
 		panel.add(btnCreateItem);
 		
 		JButton btnDoctor_4_1 = new JButton("Create User");
+		btnDoctor_4_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				User u = new User();
+				u.setVisible(true);
+			}
+		});
 		btnDoctor_4_1.setFont(new Font("Arial", Font.PLAIN, 18));
 		btnDoctor_4_1.setBounds(10, 515, 376, 55);
 		panel.add(btnDoctor_4_1);
